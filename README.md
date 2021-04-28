@@ -32,8 +32,11 @@ With the output of nmap command, it's shows that the target machine is running h
 Knowing that, we'll continue our journey by web enumeration in other to gather more information and see if there isn't some interesting files on the web server.
 so to that, we use **dirb** command to check eventuals files that might be stored on the web server
 
-**dirb 192.168.56.107**
+**dirb http://192.168.56.107**
 
-![d2](https://user-images.githubusercontent.com/63744686/116480525-fda22e80-a870-11eb-992a-12cfb26caedf.png)
+![d2](https://user-images.githubusercontent.com/63744686/116480687-4fe34f80-a871-11eb-9c0d-2877c158a156.png)
+
+
+
 
 
