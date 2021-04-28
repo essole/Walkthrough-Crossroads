@@ -7,10 +7,10 @@ Concerning the virtualisation engine, I used Virtualbox, of course it's the one 
 
 **Here's is the description given from Vulnhub about the machine:**
 
->get flags
->difficulty: easy
->about vm: tested and exported from virtualbox. dhcp and nested vtx/amdv enabled. you can contact me by email for troubleshooting or questions.
->This works better with VirtualBox rather than VMware
+* get flags
+* difficulty: easy
+* about vm: tested and exported from virtualbox. dhcp and nested vtx/amdv enabled. you can contact me by email for troubleshooting or questions.
+* This works better with VirtualBox rather than VMware
 
 **Now that all have been said, let's start:**
 
