@@ -3,7 +3,7 @@ Walkthrough vulnhub Crossroads 1  machine
 
 Hi guys, through this write-up we'll be talking about all the different process we walkthrough to capture all the flags of Vulnhub Crossroads1 machine.
 
-The machine can be downloaded of this link https://download.vulnhub.com/crossroads/crossroads_vh.ova.
+The machine can be downloaded on this link https://download.vulnhub.com/crossroads/crossroads_vh.ova.
 Concerning the virtualisation engine, I used Virtualbox, of course it's the one that is recommended for this machine.
 
 **Here's is the description given from Vulnhub about the machine:**
@@ -85,6 +85,18 @@ Now that we have the user albert creds, we can try to enumerate the kind of acce
 **smbmap -H 192.168.56.107 -u albert -p bradley1**
 
 ![d11](https://user-images.githubusercontent.com/63744686/116490831-ec185100-a887-11eb-8e58-ebbc670bd6b3.png)
+
+The output of the command shows that the user albert has to **smbshare** directory with the permissions **Read and Write**, and had access on his local directory with the permission **Read only**
+
+So then let's have access to his local directory and check what's inside
+
+**smbmount //192.168.56.107/albert smb -o username=albert**
+
+![d12](https://user-images.githubusercontent.com/63744686/116491274-07379080-a889-11eb-9ea4-2ac60181188f.png)
+
+Inside the local directory of albert, is a file called **user.txt** which contain our first flag
+
+![d13](https://user-images.githubusercontent.com/63744686/116491371-39e18900-a889-11eb-9d37-9225856b34c9.png)
 
 
 
