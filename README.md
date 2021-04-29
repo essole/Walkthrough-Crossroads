@@ -76,7 +76,7 @@ Using the metasploit auxiliary I just mentionned, we must set our options as sho
 
 ![d9](https://user-images.githubusercontent.com/63744686/116490646-6f857280-a887-11eb-9235-918a7d2b89ad.png)
 
-At the of the execution we'll find as result
+At the end of the execution we'll find as result
 
 ![d10](https://user-images.githubusercontent.com/63744686/116490749-a9567900-a887-11eb-88bb-b3b1ae50d987.png)
 
