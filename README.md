@@ -126,5 +126,14 @@ To upload the script and the wordlist on the target machine, we just have to use
 
 ![sc](https://user-images.githubusercontent.com/63744686/116493430-487e6f00-a88e-11eb-8f9d-e6d2a83ffc1d.png)
 
+Now let's execute the script we just downloaded and crack the beroot script
 
+![sc1](https://user-images.githubusercontent.com/63744686/116494533-87152900-a890-11eb-91e4-b475333eef0f.png)
+
+Everything we have to do now and find the second and last flag of this machine, is to follow the instruction given to at the end of the cracking 
+
+![sc2](https://user-images.githubusercontent.com/63744686/116494634-c2175c80-a890-11eb-90e0-ffe300ca5f8c.png)
+
+
+Here is the end of this walkthrough, I hope you guys enjoyed it. Thank you for reading!!!
 
