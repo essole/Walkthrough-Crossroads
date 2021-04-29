@@ -108,11 +108,23 @@ Knowing that, we can take advantage of it to create a **reverse TCP shell** and 
 
 ![d15](https://user-images.githubusercontent.com/63744686/116492301-744c2580-a88b-11eb-9aa5-2d0ad79fb51a.png)
 
-Before sending the payload to target machine, we have to start listening on the port we mentionned in the smbscript.sh, using the command **nc -lvp 4444**
+Before sending the payload to target machine, we have to start listening on the port we mentionned in the smbscript.sh, using the command **nc -lvp 4444**.
 After that, we are ready to go!!
 
 ![d16](https://user-images.githubusercontent.com/63744686/116492547-094f1e80-a88c-11eb-887c-daac03023fb2.png)
 
+On the attacker server we'll have this
+
+![d17](https://user-images.githubusercontent.com/63744686/116492635-4c10f680-a88c-11eb-889a-57f13ade122f.png)
+
+The command that is highlighted on the is used to gain a stable shell terminal on our machine.
+
+By checking the local directory of the user albert, we can see there's a script called **beroot**, when we execute that script, it's ask to us to enter a password for the root. 
+Here is where we'll use the wordlist we retrieved form the crossroads image to brute force the script beroot. I write for that a small script to brute the script, which I put on this repository for those who are interested.
+
+To upload the script and the wordlist on the target machine, we just have to use a python module http.Server to create a local http server and then use wget tool to download it on the target machine. Know that you'll have to process a little bit your wordlist before using it in the script or rather use the wordlitst I put on this repository
+
+![sc](https://user-images.githubusercontent.com/63744686/116493430-487e6f00-a88e-11eb-8f9d-e6d2a83ffc1d.png)
 
 
 
