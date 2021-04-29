@@ -37,6 +37,30 @@ so to that, we use **dirb** command to check eventuals files that might be store
 
 ![d2](https://user-images.githubusercontent.com/63744686/116480687-4fe34f80-a871-11eb-9c0d-2877c158a156.png)
 
+So looking on image, it's possible to see that, there are somes files on the web server. While checking the content of the robot.txt file, it's mentioned inside that
+the route /crossroad.png is disabled. Of course, our first impression might be to suppose that file should contain the first flag, but looking at it, it's not
+
+![d3](https://user-images.githubusercontent.com/63744686/116487908-a441fb80-a880-11eb-8502-a1c2812943f1.png)
+
+So then, as I said earlier, I first download the file and try to see if it's possible that something was hiden inside. To that I used a python package called **stegoveritas** to extract everthing that the picture might hide. If you do want to install the package stegoveritas on your python environnement, you just have to do **pip3 install stegoveritas** 
+and there you go.
+**stegoveritas crossroads.png**
+
+![d4](https://user-images.githubusercontent.com/63744686/116488509-0c451180-a882-11eb-9d4e-1fa13ba80b4f.png)
+
+When the file is done extracting, you'll find in your curent repository a repository created and named **results**. Inside this one, there's another repository named keepers in which there are somes files and among those file we find a wordlist, with it what we might expect is that soon it should come in handy while try to do a brute force attack.
+bellow the wordlist file captured
+
+![d5](https://user-images.githubusercontent.com/63744686/116488892-10bdfa00-a883-11eb-8d9d-79acbd14ee29.png)
+
+Now let's save this wordlist in our repository
+
+![d6](https://user-images.githubusercontent.com/63744686/116489011-5da1d080-a883-11eb-9570-ecc135123f74.png)
+
+
+
+
+
 
 
 
