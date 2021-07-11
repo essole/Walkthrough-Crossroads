@@ -37,7 +37,7 @@ so to that, we use **dirb** command to check eventuals files that might be store
 
 ![d2](https://user-images.githubusercontent.com/63744686/116480687-4fe34f80-a871-11eb-9c0d-2877c158a156.png)
 
-So looking on image, it's possible to see that, there are somes files on the web server. While checking the content of the robot.txt file, it's mentioned inside that
+So looking to the image, it's possible to see that, there are somes files on the web server. While checking the content of the robot.txt file, it's mentioned inside that
 the route /crossroad.png is disabled. Of course, our first impression might be to suppose that file should contain the first flag, but looking at it, it's not
 
 ![d3](https://user-images.githubusercontent.com/63744686/116487908-a441fb80-a880-11eb-8502-a1c2812943f1.png)
